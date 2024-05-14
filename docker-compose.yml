@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  perl-web-app:
+    build: .
+    image: yweing0720/test-perl:latest
+    ports:
+      - "4444:8080"
+    volumes:
+      - ./tmp:/tmp
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "200k"
+        max-file: "10"
