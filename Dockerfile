@@ -6,6 +6,7 @@ RUN cpanm --notest HTTP::Server::Simple::CGI
 RUN cpanm --notest CGI
 RUN cpanm --notest Data::Dumper
 RUN cpanm --notest POSIX
+RUN cpanm --notest JSON
 
 # Create a directory for the application
 RUN mkdir -p /usr/src/app
